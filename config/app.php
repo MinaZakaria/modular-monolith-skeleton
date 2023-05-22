@@ -168,6 +168,14 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+
+        /*
+         * Custom Service Providers
+         */
+        \Laracon\Inventory\Providers\InventoryServiceProvider::class,
+        \Laracon\Order\Providers\OrderServiceProvider::class,
+        \Laracon\Payment\Providers\PaymentServiceProvider::class,
+        \Laracon\Shipping\Providers\ShippingServiceProvider::class,
     ])->toArray(),
 
     /*
